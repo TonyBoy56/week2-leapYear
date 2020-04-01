@@ -11,7 +11,7 @@ $(document).ready(function() {
       $("#output").text("'"+ userInput+ "'" + " is a number, my dude. How about some words next time?")
     }
     for (var i = 0; i < vowelsArray.length; i++) {
-      if (vowelsArray[i] === userInput.includes("i") || vowelsArray[i] === userInput.includes("a")){
+      if (userInput === "i" || userInput === "a"){
         $("#output").text(userInput + "ay");
       } else if (vowelsArray[i] === userInput.charAt(0)) {
        $("#output").text(userInput + "way");
@@ -24,8 +24,3 @@ $(document).ready(function() {
     }
   });
 });
-
-
-  // else {
-  //  $("#output").text(phrase.slice(1, phrase.length) + phrase.charAt(0) + "ay");
-  // }
