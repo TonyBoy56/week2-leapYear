@@ -18,6 +18,25 @@ _This is a website that will provide a programming language for the user based o
   * Example Input: i
   * Example Output: iay
 
+* The program adds "way" to the end of words beginning with a vowel.
+  * Example Input: ouch
+  * Example Output: ouchway
+
+* The program will move all of the first consecutive consonants to the end of the word and add "ay" if word begins with 1 or more consonantes.
+  * Example Input: child
+  * Example Output: ildchay
+
+* The program will move QU to end of the word if Q & U are consecutive.
+  * Example Input: question
+  * Example Output: estionQu
+
+* The program will treat words that begin with Y like a word that starts with a consonant. (Move Y to the end & add "ay")
+  * Example Input: yes
+  * Example Output: esyay
+
+
+
+
 ## Setup/Installation Requirements
 
 * [INSERT INSTRUCTIONS]
