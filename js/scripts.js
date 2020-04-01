@@ -1,17 +1,15 @@
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
-    var input = $("input#userInput").val();
-    var inputArray = input.split("");
+    var userInput = $("input#userInput").val();
     var vowelsArray = ["a", "e", "i" , "o", "u", "A", "E", "I", "O", "U"];
-    console.log(inputArray);
-    if (input === "") {
-      alert("Invalid submission! Please enter a phrase!");
-    } else if (input === int || float) {
-      $("#output").text(input);
-    } else if (inputArray.includes(vowelsArray)) {
-      inputArray.join();
-      $("#output").text(inputArray + "ay");
+    var consonatesArray = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "x", "y", "z"];
+    var inputArray = userInput.split("");
+    
+    for (var i = 0; i < vowelsArray.length; i++) {
+      if (userInput.includes(i)) {
+        $("#output").text(userInput);
+      }
     }
   });
 });
